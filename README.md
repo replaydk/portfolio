@@ -1,1 +1,2 @@
-# Dean Klakken III Portfolio
+# Dean Klakken III
+[View my portfolio](./index.html)
