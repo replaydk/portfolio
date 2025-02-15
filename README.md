@@ -1,2 +1,2 @@
 # Dean Klakken III
-[View my portfolio]("https://replaydk.github.io/portfolio/")
+[View my portfolio](https://replaydk.github.io/portfolio/)
