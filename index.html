@@ -11,59 +11,37 @@
       padding: 0;
       text-align: center;
       background-color: rgb(255, 255, 255);
-      position: relative;
-      min-height: 100vh;
-      overflow-x: hidden;
     }
 
     /* Borders */
+
+    
     .border-left,
-    .border-right {
-      position: fixed;
-      top: 0;
-      width: 120px;
-      height: 100vh;
-      background-image: url("Media/L_R_Border.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: 0;
-    }
+.border-right {
+    position: fixed;
+    top: 0;
+    width: 120px;
+    height: 100vh;
+    background-image: url("Media/L_R_Border.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
 
-    .border-left {
-      left: 0;
-      transform: scaleX(-1);
-      transform-origin: center;
-    }
+.border-left {
+    left: 0;
+    transform: scaleX(-1); /* Mirror the image horizontally */
+    transform-origin: center;
+}
 
-    .border-right {
-      right: 0;
-    }
+.border-right {
+    right: 0;
+}
 
-    .border-top,
-    .border-bottom {
-      position: fixed;
-      width: 100%;
-      background-image: url("Media/Top_Bottom_Border.png");
-      background-repeat: repeat-x;
-      background-size: cover;
-      z-index: 0;
-    }
-
-    .border-top {
-      top: 0;
-      height: 150px;
-    }
-
-    .border-bottom {
-      bottom: 0;
-      height: 100px;
-    }
 
     @media (max-width: 1000px) {
       .border-left,
-      .border-right,
-      .border-top,
-      .border-bottom {
+      .border-right {
         display: none;
       }
     }
@@ -72,7 +50,7 @@
       position: relative;
       max-width: 900px;
       margin: 0 auto;
-      padding: 160px 10px 120px; /* Add padding so content clears the borders */
+      padding: 10px;
       background: rgb(135, 135, 135);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       z-index: 1;
@@ -173,11 +151,9 @@
   </style>
 </head>
 <body>
-  <!-- Borders -->
+  <!-- Left and Right Borders -->
   <div class="border-left"></div>
   <div class="border-right"></div>
-  <div class="border-top"></div>
-  <div class="border-bottom"></div>
 
   <header>
     <h1>Dean Klakken III - Game Design Portfolio</h1>
