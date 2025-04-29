@@ -5,36 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dean Klakken III - Game Design Portfolio</title>
     <style>
-   body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: rgb(255, 255, 255); /* Darker gray for the edges */
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+        }
         header {
             background: #ffffff;
             color: rgb(33, 33, 33);
             padding: 10px 0;
         }
         .container {
-    max-width: 900px;
-    margin: 10px auto;
-    padding: 10px;
-    background: rgb(135, 135, 135); /* Keeping the original container color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+            max-width: 900px;
+            margin: 10px auto;
+            padding: 10px;
+            background: rgb(135, 135, 135);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
         .project {
             margin: 30px 0;
             padding: 10px;
             border-bottom: 1px solid #ddd;
         }
-        .project img {
-            max-width: 100%;
-            height: auto;
-            width: 700px;
-            display: block;
-            margin: 10px auto;
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .image-row img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #fff;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
         }
         .project iframe {
             width: 700px;
@@ -61,8 +68,7 @@
     <div class="container">
         <section>
             <h2>About Me</h2>
-            <p>My name is Dean, and I am game designer with expertise in Unreal engine, Blender, and Project Managment. </p>
- 
+            <p>My name is Dean, and I am a game designer with expertise in Unreal Engine, Blender, and Project Management.</p>
         </section>
 
         <section>
@@ -70,9 +76,12 @@
             <div class="project">
                 <h3>The Jungle Demo</h3>
                 <p>A low-poly first-person horror game set in the jungle. This was my first major project as a game designer, beginning with asset packs, level design, and an introduction to node-based coding. It also features exceptional audio design. Originally developed for my Game Engines class, I continued refining it throughout Game Studio. Future updates will introduce a tutorial system, an inventory system, revamped level design, and a deeper narrative with puzzles and interactive elements.</p>
-                <img src="Media/the-jungle-demo-1.jpg" alt="The Jungle Demo Screenshot 1">
-                <img src="Media/the-jungle-demo-2.jpg" alt="The Jungle Demo Screenshot 2">
-                <img src="Media/the-jungle-demo-3.jpg" alt="The Jungle Demo Screenshot 3">
+                
+                <div class="image-row">
+                    <img src="Media/the-jungle-demo-1.jpg" alt="The Jungle Demo Screenshot 1">
+                    <img src="Media/the-jungle-demo-2.jpg" alt="The Jungle Demo Screenshot 2">
+                    <img src="Media/the-jungle-demo-3.jpg" alt="The Jungle Demo Screenshot 3">
+                </div>
                 
                 <a href="https://replaydk.itch.io/the-jungle-demo">Play Now</a>
                 <iframe width="700" height="400" src="https://www.youtube.com/embed/Its6TKhTMks?si=3U-NnAOiPfnE2TBX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
