@@ -1,103 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dean Klakken III Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 1em 0;
-      text-align: center;
-    }
-
-    main {
-      padding: 2em;
-    }
-
-    .project {
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-bottom: 2em;
-      padding: 1em;
-    }
-
-    h2 {
-      color: #0066cc;
-    }
-
-    p {
-      line-height: 1.6;
-    }
-
-    .play-button-container {
-      text-align: center;
-      margin: 15px 0;
-    }
-
-    .play-button {
-      background-color: #0066cc;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-      margin: 5px;
-      display: inline-block;
-    }
-
-    .play-button:hover {
-      background-color: #004999;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dean Klakken III - Game Design Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+        }
+        header {
+            background: #ffffff;
+            color: rgb(33, 33, 33);
+            padding: 10px 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 10px auto;
+            padding: 10px;
+            background: rgb(135, 135, 135);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .project {
+            margin: 30px 0;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .image-row img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #fff;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+        .project iframe {
+            width: 700px;
+            height: 400px;
+            display: block;
+            margin: 20px auto;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #ffffff;
+            color: white;
+        }
+    </style>
 </head>
-
 <body>
-  <header>
-    <h1>Dean Klakken III Portfolio</h1>
-  </header>
+    <header>
+        <h1>Dean Klakken III - Game Design Portfolio</h1>
+        <p>Hello and welcome to my portfolio!</p>
+        <p>Contact info: Dean.klakken@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/dean-klakken-iii-562291349/" target="_blank" rel="noopener noreferrer">Your Profile</a></p>
+    </header>
 
-  <main>
-    <div class="project">
-      <h2>The Jungle Demo</h2>
-      <p>A short first-person horror experience created for MART 391. Features dense foliage, ambient sound, and basic AI.</p>
-      <div class="play-button-container">
-        <a class="play-button" href="https://replaydk.itch.io/the-jungle-demo" target="_blank" rel="noopener noreferrer">Play Now</a>
-      </div>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>I am a <strong>Game Designer</strong> with expertise in <strong>Unreal Engine</strong>, <strong>Blender</strong>, and <strong>Project Management</strong>.</p>
+            <p>I am currently a <strong>Team Leader</strong> in the <strong>Montana Army National Guard</strong>. This has provided the following skillset:</p>
+            <ul style="list-style-type: disc; text-align: left; max-width: 700px; margin: 0 auto; padding-left: 20px;">
+                <li><strong>Concise and consistent communication.</strong></li>
+                <li><strong>The ability to give and receive constructive criticism</strong></li>
+                <li><strong>Strong leadership in the face of adversity.</strong></li>
+            </ul>
+            
+        </section>
+
+        <section>
+           
+            <div class="project">
+                <h2>Featured Projects</h2>
+                <h3>The Jungle Demo</h3>
+                <p>A low-poly first-person horror game set in the jungle. This was my first major project as a game designer, beginning with <strong>asset packs</strong>, </strong>level design</strong>, and an introduction to node-based coding. It also features exceptional audio design. Originally developed for my Game Engines class, I continued refining it throughout Game Studio. Future updates will introduce a tutorial system, an inventory system, revamped level design, and a deeper narrative with puzzles and interactive elements.</p>
+                
+                <div class="image-row">
+                    <img src="Media/the-jungle-demo-1.jpg" alt="The Jungle Demo Screenshot 1">
+                    <img src="Media/the-jungle-demo-2.jpg" alt="The Jungle Demo Screenshot 2">
+                    <img src="Media/the-jungle-demo-3.jpg" alt="The Jungle Demo Screenshot 3">
+                </div>
+                
+                <a href="https://replaydk.itch.io/the-jungle-demo" target="_blank" rel="noopener noreferrer">Play Now</a>
+                <iframe src="https://www.youtube.com/embed/Its6TKhTMks?si=3U-NnAOiPfnE2TBX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           <P>**VOLUME WARNING** </P>
+            </div>
+
+            <div class="project">
+                <h3>Hushed Library</h3>
+                <p>A psychological horror game set in an eerie library. (Quest 3 required for play) This project was the most current culmination of a lot of my ability and potential. I'm now much more comfortable in unreal engine 5, and the quality has jumped since they jungle demo. I've learned more about not only level design, but audio, trigger boxes, and other design elements that not only breathe life into the game, but a chill down the back of your neck.</p>
+                
+                <div class="image-row">
+                    <img src="Media/hushed-library-1.jpg" alt="Hushed Library Screenshot 1">
+                    <img src="Media/hushed-library-2.jpg" alt="Hushed Library Screenshot 2">
+                    <img src="Media/hushed-library-3.jpg" alt="Hushed Library Screenshot 3">
+                </div>
+                
+                <a href="https://replaydk.itch.io/hushed-library" target="_blank" rel="noopener noreferrer">Play Now</a>
+            </div>
+
+            <div class="project">
+                <h3>Scuba Lizard</h3>
+                <p>A 2D underwater adventure featuring a lizard protagonist. Created in 48 hours during the Global Game Jam 2025. I did not create the art for this project, I coded the game systems, and applied animations to premade sprite sheets. My biggest strength in this project was being able to use ChatGPT to work beyond my own personal skill for coding in C++. Additionally, I acted as a project manager for this and was able to effectively delegate tasks and work through challenges in that 48 hours.</p>
+                
+                <div class="image-row">
+                    <img src="Media/scuba-lizard-1.jpg" alt="Scuba Lizard Screenshot 1">
+                    <img src="Media/scuba-lizard-2.jpg" alt="Scuba Lizard Screenshot 2">
+                    <img src="Media/scuba-lizard-3.jpg" alt="Scuba Lizard Screenshot 3">
+                </div>
+                
+                <a href="https://replaydk.itch.io/scubalizard" target="_blank" rel="noopener noreferrer">Play Now</a> | 
+                <a href="https://github.com/replaydk/ScubaLizard" target="_blank" rel="noopener noreferrer">GitHub</a>
+                
+                <iframe src="https://www.youtube.com/embed/nYui1bQ3gCM?si=fm3SPWe8RD--aFjT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills & Technologies</h2>
+            <p>Unreal Engine, Unity, AR/VR, AI, Blender</p>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Email: dean.klakken@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/dean-klakken-iii-562291349/" target="_blank" rel="noopener noreferrer">Your Profile</a></p>
+        </section>
     </div>
 
-    <div class="project">
-      <h2>Hushed Library</h2>
-      <p>Explores horror and atmosphere in an abandoned library setting. Created for Game Jam 2024 using Unity.</p>
-      <div class="play-button-container">
-        <a class="play-button" href="https://replaydk.itch.io/hushed-library" target="_blank" rel="noopener noreferrer">Play Now</a>
-      </div>
-    </div>
-
-    <div class="project">
-      <h2>Scuba Lizard</h2>
-      <p>2D underwater exploration game created in Unity. Includes custom oxygen system, collision mechanics, and basic UI.</p>
-      <div class="play-button-container">
-        <a class="play-button" href="https://replaydk.itch.io/scuba-lizard" target="_blank" rel="noopener noreferrer">Play Now</a>
-        <a class="play-button" href="https://github.com/ReplayDK/scuba-lizard" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
-      </div>
-    </div>
-  </main>
+    <footer class="footer">
+        <p>© 2025 Dean Klakken III – All Rights Reserved.</p>
+    </footer>
 </body>
-
 </html>
