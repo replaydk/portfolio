@@ -5,14 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dean Klakken III - Game Design Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      background-color:(#c98449);
-    }
+   body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 0;
+}
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #c98449; /* Replace with your preferred color */
+  z-index: -2;
+}
     /* Borders */
 
     
