@@ -15,24 +15,27 @@
 
     /* Borders */
     .border-left,
-    .border-right {
-      position: fixed;
-      top: 0;
-      width: 120px;
-      height: 100vh;
-      background-image: url("Media/L_R_Border.png");
-      background-repeat: repeat-y;
-      background-size: cover;
-      z-index: 0;
-    }
+.border-right {
+    position: fixed;
+    top: 0;
+    width: 120px;
+    height: 100vh;
+    background-image: url("Media/L_R_Border.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
 
-    .border-left {
-      left: 0;
-    }
+.border-left {
+    left: 0;
+    transform: scaleX(-1); /* Mirror the image horizontally */
+    transform-origin: center;
+}
 
-    .border-right {
-      right: 0;
-    }
+.border-right {
+    right: 0;
+}
+
 
     @media (max-width: 1000px) {
       .border-left,
